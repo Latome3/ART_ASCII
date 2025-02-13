@@ -6,7 +6,7 @@ import os
 contenaire="@#A%€&ç+ù=¤*:-_ "     #"@#A%€&ç+ù=¤*:-_ "
 
 os.chdir("IMG_ART_ASCII")
-image_list=[e for e in os.listdir()]
+image_list=[e for e in os.listdir() if e.endswith(".jpg") or e.endswith(".png") or e.endswith(".gif")]
 os.chdir("..")
 
 choix=-5 # 5 est choisit au hasard
